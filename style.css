@@ -1,0 +1,157 @@
+:root {
+  --accent: #008080; /* Teal */
+  --accent-light: #d0f0f0;
+  --text-color: #222;
+  --bg-color: #fff;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.image-block img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+h2, h3, h4 {
+  margin-top: 0;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.site-header {
+  background: #fafafa;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #f5f5f5;
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.125rem;
+  color: #555;
+}
+
+.two-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.two-col > * {
+  flex: 1 1 45%;
+}
+
+.project-grid, .stack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card, .stack-grid div {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-links a {
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Inherit full text color */
+.project-links.inherit a {
+  color: inherit;
+  background: transparent;
+  border-bottom: 1px solid currentColor;
+}
+
+.project-links.inherit a:hover {
+  color: #000;
+  border-color: #000;
+}
+
+/* Accent color style */
+.project-links.accent a {
+  color: var(--accent);
+  background-color: var(--accent-light);
+}
+
+.project-links.accent a:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin-bottom: 0.5rem;
+}
+
+.site-footer {
+  background: #fafafa;
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+}
