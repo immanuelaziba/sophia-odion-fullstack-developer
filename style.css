@@ -19,7 +19,7 @@ body {
 
 /* Make About image float with wrap */
 .about-img {
-  float: left;
+  float: right;
   width: 450px;
   max-width: 45%;
   margin: 0 2rem 1rem 0;
