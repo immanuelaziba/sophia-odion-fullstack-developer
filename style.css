@@ -172,17 +172,3 @@ ul {
   text-align: center;
   border-top: 1px solid #eaeaea;
 }
-
-@media (max-width: 768px) {
-  .about-img {
-    float: none;
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .text-block h2 {
-    text-align: center;
-  }
-}
